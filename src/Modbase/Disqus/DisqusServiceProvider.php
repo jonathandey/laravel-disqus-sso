@@ -18,7 +18,9 @@ class DisqusServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('modbase/disqus-sso');
+		$this->publishes([
+			__DIR__ . '/../../config/key.php' => config_path('modbase-disqus-sso.php'),
+		], 'config');
 	}
 
 	/**
