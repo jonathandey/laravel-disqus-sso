@@ -20,7 +20,7 @@ A simple Laravel packages used to generate payload for the Disqus SSO feature.
 
 - Publish the configuration file:
 
-`php artisan config:publish modbase/disqus-sso`
+`php artisan vendor:publish --tag=config --provider="Modbase\Disqus\DisqusServiceProvider"`
 
 ## Configuration
 
