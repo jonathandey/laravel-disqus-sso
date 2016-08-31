@@ -12,11 +12,11 @@ A simple Laravel packages used to generate payload for the Disqus SSO feature.
 
 - Add the service provider to `app/config/app.php`:
 
-`'Modbase\Disqus\DisqusServiceProvider',`
+`Modbase\Disqus\DisqusServiceProvider::class,`
 
 - Add the alias to `app/config/app.php`:
 
-`'DisqusSSO'       => 'Modbase\Disqus\Facades\DisqusSSO',`
+`'DisqusSSO'       => Modbase\Disqus\Facades\DisqusSSO::class,`
 
 - Publish the configuration file:
 
